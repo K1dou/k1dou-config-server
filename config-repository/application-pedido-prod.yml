@@ -1,0 +1,25 @@
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  packages-to-scan: com.kido.pedido_api.controller
+
+spring:
+  #rabbitmq:
+  #  host: localhost
+   # port: 5672
+   # username: rabbitmq
+    #password: rabbitmq
+  application:
+    name: pedido-api
+server:
+  port: 7788
+
+#rabbitmq:
+ # .exchange:
+  #  name: pedidos.v1.pedido-criado
+
+
+
+pedido-service:
+  pedido: "Cia"
+  default-value: "Mondo"
