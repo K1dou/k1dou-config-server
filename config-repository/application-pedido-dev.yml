@@ -22,4 +22,5 @@ server:
 
 pedido-service:
   pedido: "Hello"
-  default-value: "World"
+  default-value: "Mundo"
+
