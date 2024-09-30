@@ -1,0 +1,37 @@
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  packages-to-scan: com.kido.pedido_api.controller
+
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/pedidosapi
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+  application:
+    name: processador-api
+server:
+  port: 7788
+
+  #rabbitmq:
+  # .exchange:
+  #  name: pedidos.v1.pedido-criado
+
+
+
+pedido-service:
+  pedido: "Bem vindo"
+  default-value: "Processador Prod"

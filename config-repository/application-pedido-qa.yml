@@ -22,4 +22,4 @@ server:
 
 pedido-service:
   pedido: "Olá"
-  default-value: "Mundo"
+  default-value: "Pedido QA"

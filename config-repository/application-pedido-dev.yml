@@ -22,5 +22,5 @@ server:
 
 pedido-service:
   pedido: "Hello"
-  default-value: "Mundo"
+  default-value: "Pedido dev"
 
