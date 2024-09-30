@@ -1,0 +1,49 @@
+spring:
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+  application:
+    name: notificacao-api
+server:
+  port: 7080
+
+  #rabbitmq:
+  # .exchange:
+  #  name: pedidos.v1.pedido-criado
+
+
+
+notificao-service:
+  pedido: "Bem vindo"
+  default-value: "Notificacao QA"
+
+
+
+
+  ## swagger-ui custom path
+  #springdoc.swagger-ui.path=/swagger-ui.html
+  #spring-doc.packages-to-scan[]=com.kido.notificacao_service.controller
+
+
+
+  #rabbitmq.exchange.name=pedidos.v1.pedido-criado
+  #rabbitmq.exchange.dlx.name=pedidos.v1.pedido-criado.dlx
+  #rabbitmq.queue.name=pedidos.v1.pedodo-criado-gerar-notificacao
+  #rabbitmq.queue.dlq.name=pedidos.v1.pedodo-criado-gerar-notificacao.dlq
+
+  #REENVIO DE MENSAGEM
+  #spring.rabbitmq.listener.simple.default-requeue-rejected=false
+  #spring.rabbitmq.listener.simple.retry.enabled=true
+  #spring.rabbitmq.listener.simple.retry.max-attempts=3
+  #spring.rabbitmq.listener.simple.retry.initial-interval=5s
+  #spring.rabbitmq.listener.simple.retry.multiplier=2
+
+
+  #SPRING MAIL
+  #spring.mail.host=localhost
+  #spring.mail.port=1025
+  #spring.mail.properties.mail.smtp.auth=false
+  #spring.mail.properties.mail.smtp.starttls.enable=false
+  #spring.mail.properties.mail.smtp.starttls.required=false

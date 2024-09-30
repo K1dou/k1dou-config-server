@@ -24,7 +24,7 @@ spring:
   application:
     name: processador-api
 server:
-  port: 7788
+  port: 8080
 
   #rabbitmq:
   # .exchange:
