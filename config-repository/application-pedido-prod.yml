@@ -9,8 +9,6 @@ spring:
    # port: 5672
    # username: rabbitmq
     #password: rabbitmq
-  application:
-    name: pedido-api
 server:
   port: 7788
 
